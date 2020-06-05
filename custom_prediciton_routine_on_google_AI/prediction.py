@@ -10,7 +10,7 @@ MODEL_NAME ='cats_vs_dogs.h5'
 CLASS_NAMES=['Cat','Dog']
 class CatsVsDogsPredicition:
     def __init__(self,model):
-        self.model = model
+        self._model = model
     
     def _preprocess(self,instances,size=128):
         # decode the data, we get encoded data from instances
